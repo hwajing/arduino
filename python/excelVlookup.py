@@ -8,7 +8,8 @@ from openpyxl import load_workbook
 # https://openpyxl.readthedocs.io/en/stable/api/openpyxl.workbook.workbook.html
 # 以Left表为基准，将Right表的数据匹配过来。
 # 【joinColumns】为被匹配列，左右表必须同名
-# 【resultColumns】为Right表中
+# 【resultColumns】为Right表中获取列（可指定多列，但必须包含匹配列）
+# 【fileName4Result】如需在新文件中显示结果，此参数指定新文件名（如与原文件名一致则在原文件内添加sheet）
 filePath = 'C:/Users/hwaji/PycharmProjects/Arduino\excel/'
 fileName = 'vlookup.xlsx'
 sheetLeft = 'sheet1'
