@@ -2,10 +2,10 @@ import pandas as pd
 import os
 from openpyxl import load_workbook
 # ===============================================================================================================
-# 参照文档
-# pandas
+# 技术文档
+# 【pandas】
 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html?highlight=merge#pandas.merge
-# openpyxl
+# 【openpyxl】
 # https://openpyxl.readthedocs.io/en/stable/api/openpyxl.workbook.workbook.html
 # ===============================================================================================================
 # ★★★请自行修改相应参数★★★
@@ -24,12 +24,13 @@ resultColumns = ['客户代码', 'SAP客户代码']
 fileName4Result = 'result.xlsx'
 sheetName4Result = 'result'
 # ★★★请自行修改相应参数★★★
-# ==========================================================================
+# ==============================================================================================
 # 左连匹配
 how = 'left'
 fileName = filePath + fileName
 fileName4Result = filePath + fileName4Result
-# ==========================================================================
+# ==============================================================================================
+
 if not os.path.exists(fileName):
     print('File not exist: ' + fileName)
 else:
