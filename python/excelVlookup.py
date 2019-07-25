@@ -15,7 +15,7 @@ from openpyxl import load_workbook
 # 【joinColumns】匹配列，左右表必须同名
 # 【resultColumns】为Right表中挑选列（可指定多列，但必须包含匹配列）。显示结果为左表所有列+右表挑选列。
 # 【fileName4Result】如需在新文件中显示结果，此参数指定新文件名（如与原文件名一致则在原文件内添加sheet）
-filePath = 'C:/Users/hwaji/PycharmProjects/Arduino\excel/'
+filePath = 'C:/Users/hwaji/PycharmProjects/Arduino/excel/'
 fileName = 'vlookup.xlsx'
 sheetLeft = 'sheet1'
 sheetRight = 'SAP主数据'
